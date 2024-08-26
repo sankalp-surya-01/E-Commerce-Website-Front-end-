@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+h1{
+    font-size: 55px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2{
+    font-size: 48px;
+    line-height: 64px;
+    color: #222;
+}
+
+h4{
+    font-size: 20px;
+    color: #222;
+}
+
+h6{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+p{
+    font-size: 16px;
+    color: #465b52;
+    padding: 15px 0px 20px 0px;
+}
+
+.section-p1{
+    padding: 40px 80px;
+
+}
+
+.section-m1{
+    margin: 40px 0px ;
+}
+
+button.normal{
+    font-size: 16px;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    cursor : pointer;
+    padding: 15px 35px;
+    color: black;
+    background-color: white;
+}
+
+body{
+    width: 100%;
+}
+
+
+
+/* Header Starts */
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #e3e6f3;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style-type: none;
+    padding: 0px 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: green;
+}
+
+/* Code to add line under any text */
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: " ";
+    width: 35%;
+    height: 2px;
+    background: green;
+    position: absolute;
+    bottom: -5px;
+    left: 20px;
+}
+
+
+
+/* Home Page */
+#hero{
+    height: 90vh;
+    width: 100%;
+    padding: 0 80px;
+    background: url("img/hero4.png") center/cover;
+    background-position: top 25% right 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+#hero h4{
+    padding-bottom: 15px;
+}
+
+#hero h1{
+    color: #088178;
+}
+
+#hero button{
+    background: url("img/button.png") center/cover;
+    width: 15%;
+    height: 5%;
+    font-size: 17px;
+    font-weight: bolder;
+    color: #088178;
+    border: none; 
+    cursor: pointer;  
+}
+
+
+/* Feature section  */
+
+#feature{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 15px 15px 34px rgba(0, 0, 0, 0.05);
+    border: 1px solid #cce7d0;
+    margin: 15px 0px;
+}
+
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#feature .fe-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    font-size: 16px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #4ef0ff;
+}
+
+#feature .fe-box:nth-child(2) h6{
+    background-color: #ee95c8;
+}
+
+#feature .fe-box:nth-child(3) h6{
+    background-color: #b8dd7f;
+}
+
+#feature .fe-box:nth-child(4) h6{
+    background-color: #abd0e9;
+}
+
+#feature .fe-box:nth-child(5) h6{
+    background-color: #a390dc;
+}
+
+#feature .fe-box:nth-child(6) h6{
+    background-color: #e1a789;
+}
+
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 35px #4ef0ffc2;
+    transition: 0.6s ease;
+}
+
+#feature .fe-box:hover:nth-child(2){
+    box-shadow: 10px 10px 35px #ee95c8c2;
+    transition: 0.6s ease;
+}
+#feature .fe-box:hover:nth-child(3){
+    box-shadow: 10px 10px 35px #b8dd7f;
+    transition: 0.6s ease;
+}
+#feature .fe-box:hover:nth-child(4){
+    box-shadow: 10px 10px 35px #abd0e9;
+    transition: 0.6s ease;
+}
+#feature .fe-box:hover:nth-child(5){
+    box-shadow: 10px 10px 35px #a390dcbc;
+    transition: 0.6s ease;
+}
+#feature .fe-box:hover:nth-child(6){
+    box-shadow: 10px 10px 35px #e1a689c2;
+    transition: 0.6s ease;
+}
+
+
+/* Product on home page */
+#product1{
+    text-align: center;
+}
+.pro-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    justify-content: space-between;
+}
+
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;   
+    padding: 12px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+#product1 .pro:hover{
+    transition: 0.5s ease;
+    box-shadow: 20px 20px 50px #cce7d0;
+}
+
+#product1 .pro img{
+    width: 100%;
+    border-radius: 25px;
+}
+
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0px;
+}
+#product1 .pro .des span{
+    font-size: 15px;
+    color: #606063;
+}
+#product1 .pro .des h5{
+    font-size: 18px;
+    color: #1a1a1a;
+    padding: 7px 0px;
+}
+#product1 .pro .des .stars span{
+    font-size: 15px;
+    color: rgb(245, 181, 25);
+}
+#product1 .pro .des h4{
+    color: #088178;
+    font-size: 18px;
+    padding-top: 10px;
+    font-weight: 700;
+
+}
+#product1 .pro a span{
+    color: #088178;
+    padding: 10px;
+    border-radius: 40px;
+    background-color: #e8f6ea;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+#product1 .pro a span:hover{
+    background-color: #088178;
+    color: white;
+}
+
+/* Banner section */
+#banner{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("img/banner/b2.jpg");
+}
+
+#banner h4{
+    color: white;
+}
+#banner h2{
+    color: white;
+    padding: 10px 0px;
+}
+#banner h2 span{
+    color: #ef3636;
+    font-weight: 700;
+}
+#banner button:hover{
+    background-color: #99665d;
+    color: white;
+}
+
+
+
+/* Call to action and text banners */
+
+#action-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#action-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 660px;
+    height: 55vh;
+    background: url("img/banner/b17.jpg") no-repeat center center/cover;
+    padding: 30px;
+}
+#action-banner .banner-box:nth-child(2){
+    background: url("img/banner/b10.jpg") center center/cover no-repeat;
+}
+#action-banner h4{
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+}
+#action-banner h2{
+    color: white;
+    font-size: 56px;
+}
+#action-banner span{
+    color: white;
+    font-size: 17px;
+    padding-bottom: 15px;
+}
+#action-banner button{
+    padding: 8px 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+    background-color: transparent;
+    border: 2px solid white;
+}
+#action-banner button:hover{
+    background-color: #088178;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+
+}
+
+
+
+/* Text banners */
+#text-banner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#text-banner .banner-box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 30%;
+    height: 30vh;
+    padding: 0px 15px;
+    background: url("img/banner/b7.jpg") no-repeat center center/cover;
+}
+#text-banner .banner-box:nth-child(2){
+    background: url("img/banner/b4.jpg") no-repeat center center/cover;
+}
+#text-banner .banner-box:nth-child(3){
+    background: url("img/banner/b18.jpg") no-repeat center center/cover;
+}
+#text-banner h2{
+    color: white;
+    font-weight: 900;
+    font-size: 30px;
+}
+#text-banner h3{
+    color: #cad8c8;
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+
+/* Newsletter */
+#newsletter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background:#041e42 url("img/banner/b14.png");
+}
+#newsletter h4{
+    color: white;
+    font-weight: 800;
+    font-size: 26px;
+}
+#newsletter p{
+    color: #818ea0;
+    font-weight: 800;
+    font-size: 17px;
+}
+#newsletter p span{
+    color: #d6c100;
+    font-size: 17px;
+    font-weight: 800;
+}
+#newsletter .news-box{
+    display: flex;
+    width: 40%;
+}
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    width: 100%;
+    border: 2px solid transparent;
+    outline: none;
+    border-radius: 4px;
+    font-size: 18px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#newsletter button{
+    background-color: #088178;
+    color: white;
+    border-radius: 4px;
+    white-space: nowrap;
+    font-size: 18px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+
+/* Footer section */
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer .logo{
+    margin-bottom: 30px;
+}
+footer h4{
+    font-size: 17px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 15px;
+    padding: 0 0 9px 0;
+}
+footer a{
+    font-size: 15px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #666;
+}
+footer .follow{
+    margin-top: 20px;
+}
+footer .follow h4{
+    padding: 0 0 10px 0;
+}
+footer .icon{
+    font-size: 18px;
+}
+footer .icon .fa{
+    color: #666;
+    padding-right: 3px;
+    cursor: pointer;
+}
+footer .install .row img{
+    border: 2px solid #088178;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+footer .install h4{
+    padding-bottom:0px ;
+    margin-bottom: 10px;
+}
+footer .follow .fa:hover,footer a:hover{
+    color: #088178;
+}
+.copyright p{
+    text-align: center;
+    padding-top: 0;
+}
